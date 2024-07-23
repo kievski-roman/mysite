@@ -20,8 +20,6 @@ include 'nav.php';
             echo "<tr>";
             for ($j = 1; $j <= 10; $j++) {
                 $product = $i * $j;
-                
-                // Разукрашивание чисел в выражении
                 $coloredI = '';
                 foreach (str_split(strval($i)) as $digit) {
                     $coloredI .= "<span style='color: " . getColor($digit) . ";'>$digit</span>";
